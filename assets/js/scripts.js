@@ -14,7 +14,7 @@ getRepos = () => {
         };
         output += `
 			<div class="col-6 col-12-medium" style="padding:1%; margin: 0 auto;">
-					<div class="card" >
+					<div class="card">
 				  	<div class="card-body">
              <h5 class="card-title">
              <strong>
