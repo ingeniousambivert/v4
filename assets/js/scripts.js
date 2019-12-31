@@ -1,0 +1,63 @@
+// To fetch Github Repos
+
+getRepos = () => {
+  fetch(
+    "https://api.github.com/users/ingeniousambivert/repos?sort=created:asc&client_id=22ea12584240e7a2631f&client_secret=bc2deb37cb23d714f3b16483ba93a4a0e61f93e9"
+  )
+    .then(res => res.json())
+    .then(data => {
+      let output = "";
+      let len = 0;
+      data.forEach(function(repo) {
+        icon = () => {
+          return len % 3 === 0 ? " fas fa-file-code" : "fas fa-code";
+        };
+        output += `
+						<a class="col-sm-6">
+					<a class="card" >
+					<a class="card-body">
+						<h5 class="card-title"><strong><a target='_blank'; href="${repo.html_url}">${
+          repo.name
+        }</a></strong> </h5><i class="${icon()}"> </i>
+				<p class="card-text">${repo.description}</p>
+					</a>
+					</a>
+				</a>
+        `;
+        len++;
+      });
+
+      document.getElementById("output").innerHTML = output;
+    })
+    .catch(err => console.log(err));
+};
+getRepos();
+
+// To generate random quotes
+
+randomQ = () => {
+  let q = new Array();
+
+  q[1] =
+    "We have seen that computer programming is an art, because it applies accumulated knowledge to the world, because it requires skill & ingenuity, & especially because it produces objects of beauty. - Paul Graham";
+  q[2] =
+    "Programming today is a race between software engineers striving to build bigger & better idiot-proof programs, & the Universe trying to produce bigger & better idiots. So far, the Universe is winning. - Rich Cook";
+  q[3] =
+    "A good programmer is someone who always looks both ways before crossing a one-way street. - Keith Weinberg";
+  q[4] =
+    "Computer science education cannot make anybody an expert programmer any more than studying brushes & pigment can make somebody an expert painter. - Eric S. Raymond ";
+  q[5] =
+    "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to code. - Linus Torvalds";
+  q[6] =
+    "You might not think programmers are artists, but programming is extremely creative profession. Its logic-based creativity. - John Romero";
+  q[7] =
+    "Everyone should learn how to program a computer because it teaches you how to think. - Steve Jobs";
+  q[8] = "First solve the problem , then write the code. - John Johnson";
+  q[9] =
+    "The most important property of a program is whether it accomplishes the intention of its user. - C.A.R Hoare";
+  q[10] = "Truth can only be found in one place: the code. - Robert C. Martin";
+  let ry = Math.floor(Math.random() * q.length);
+  if (ry == 0) ry = 1;
+  document.getElementById("quote").innerHTML = q[ry];
+};
+randomQ();
