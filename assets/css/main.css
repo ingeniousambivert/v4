@@ -1599,7 +1599,10 @@ input, select, textarea {
 	form ::-moz-focus-inner {
 		border: 0;
 	}
-
+/*Overlay*/
+	.pink-overlay{
+		background-color: #000000c0;
+	}
 /* Image */
 
 	.image {

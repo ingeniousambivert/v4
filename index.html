@@ -50,7 +50,7 @@
     <script src="./assets/js/typeit.js"></script>
     <!-- Typeit JS Instance-->
     <script type="text/javascript">
-      type_it = () => {
+      type_it1 = () => {
         return new TypeIt("#subhead", {
           strings: [
             "Browse my growing portfolio of progressive development, feel free to drop a line."
@@ -61,9 +61,21 @@
           loop: false
         });
       };
+       type_it2 = () => {
+         type_it1();
+          return new TypeIt("#subdesc", {
+            strings: [
+              "So in case you were wondering what this is all about ..."
+            ],
+            speed: 80,
+            breakLines: false,
+            autoStart: false,
+            loop: false
+          });
+        };
     </script>
   </head>
-  <body class="homepage is-preload" onload="type_it();">
+  <body class="homepage is-preload" onload="type_it2();">
     <div id="page-wrapper">
       <!-- Header -->
       <section id="header" class="wrapper">
@@ -91,7 +103,7 @@
       <section id="intro" class="wrapper style1">
         <div class="title">The Introduction</div>
         <div class="container">
-          <p class="style1">
+          <p class="style1" id="subdesc">
             So in case you were wondering what this is all about ...
           </p>
           <p class="style3">
@@ -127,8 +139,8 @@
                   <section>
                     <h3 class="icon solid fa-image">Front-End Development</h3>
                     <p>
-                      I can create websites and SPAs with ReactJS and I work
-                      great with all modern frameworks and libraries.
+                      I can create websites and SPAs with ReactJS and I can work
+                   with all modern frameworks and libraries.
                     </p>
                   </section>
                 </div>
@@ -180,18 +192,59 @@
           </section>
         </div>
       </section>
-
       <!-- Highlights -->
-      <section id="work" class="wrapper style3">
-        <div class="title">The Work</div>
+      <section id="highlights" class="wrapper style3">
+        <div class="title">The Works</div>
         <div class="container">
           <header class="style1">
             <p>
-              A brief info of my
+              Some of my recent work
+            </p>
+          </header>
+          <div class="row aln-center">
+            <div class="col-4 col-12-medium">
+              <section class="highlight">
+                <p class="image featured"><img src="images/swich.png" alt="" /></p>
+                <h3>Swich Developers</h3>
+                <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet
+                  laoreet lorem.</p>
+                <ul class="actions">
+                  <li><a href="https://swich.netlify.com/" target="_blank" class="button style1">Learn More</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-4 col-12-medium">
+              <section class="highlight">
+                <p class="image featured"><img class="pink-overlay" src="images/codershive.png" alt="" /></p>
+                <h3>codersHive</h3>
+                <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet
+                  laoreet lorem.</p>
+                <ul class="actions">
+                  <li><a href="https://chive.000webhostapp.com/index.php" target="_blank" class="button style1">Learn More</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-4 col-12-medium">
+              <section class="highlight">
+                <p class="image featured"><img src="images/aucms.png" alt="" /></p>
+                <h3>AU|CMS</h3>
+                <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet
+                  laoreet lorem.</p>
+                <ul class="actions">
+                  <li><a href="https://aucms.herokuapp.com/" target="_blank" class="button style1">Learn More</a></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+     
+        <div class="container">
+          <header class="style1">
+            <p>
+              A brief of my
               <a href="https://www.github.com/ingeniousambivert" target="_blank"
                 >GitHub</a
-              >
-              , so you get an idea of my work.
+              >, so you get an idea of my work.
             </p>
           </header>
           <div class="repo-container">
