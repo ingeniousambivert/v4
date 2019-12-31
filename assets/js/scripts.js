@@ -13,16 +13,16 @@ getRepos = () => {
           return len % 3 === 0 ? " fas fa-file-code" : "fas fa-code";
         };
         output += `
-						<a class="col-sm-6">
-					<a class="card" >
-					<a class="card-body">
+						<div class="col-sm-6">
+					<div class="card" >
+					<div class="card-body">
 						<h5 class="card-title"><strong><a target='_blank'; href="${repo.html_url}">${
           repo.name
         }</a></strong> </h5><i class="${icon()}"> </i>
 				<p class="card-text">${repo.description}</p>
-					</a>
-					</a>
-				</a>
+					</div>
+					</div>
+				</div>
         `;
         len++;
       });
