@@ -60,6 +60,16 @@ randomQ = () => {
   q[9] =
     "The most important property of a program is whether it accomplishes the intention of its user. - C.A.R Hoare";
   q[10] = "Truth can only be found in one place: the code. - Robert C. Martin";
+  q[11] =
+    "Programming isn't about what you know; it's about what you can figure out. - Chris Pine";
+  q[12] =
+    "The only way to learn a new programming language is by writing programs in it. - Dennis Ritchie";
+  q[13] =
+    "Sometimes it's better to leave something alone, to pause, and that's very true of programming. - Joyce Wheeler";
+  q[14] =
+    "In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them. - Andrew Hunt";
+  q[15] =
+    "Don't write better error messages, write code that doesn't need them. - Jason C McDonald";
   let ry = Math.floor(Math.random() * q.length);
   if (ry == 0) ry = 1;
   document.getElementById("quote").innerHTML = q[ry];
