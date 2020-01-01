@@ -83,7 +83,6 @@ input, select, textarea {
 
 	.card{
 		border: 2px solid #f3f3f3;
-		padding: 0% 0 ;
 		border-radius: 10px;
 		color: rgba(255, 255, 255, 0.719);
 		background: #e97770 url("images/overlay.png")
@@ -95,7 +94,7 @@ input, select, textarea {
 
 	.repo-container{
 	width: auto;
-	margin: 0.5% 7%;
+	margin: 0.5% 10%;
 	align-content: center;
 	text-align: center;
 	height: 400px;
