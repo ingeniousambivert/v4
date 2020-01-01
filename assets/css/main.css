@@ -82,6 +82,9 @@ input, select, textarea {
 		#reset-button{
 			display: none;
 		}
+		#social-links{
+			display: inline-block;
+		}
 	}
 
 	.card{
