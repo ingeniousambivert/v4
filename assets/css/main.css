@@ -79,6 +79,9 @@ input, select, textarea {
 		#github-container{
 			padding-top: 10%;
 		}
+		#reset-button{
+			display: none;
+		}
 	}
 
 	.card{
