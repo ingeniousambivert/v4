@@ -1,10 +1,5 @@
 @import url("fontawesome-all.min.css");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Raleway:400,900&display=swap');
-/*
-	Escape Velocity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -76,27 +71,43 @@ input, select, textarea {
 }
 
 /* Basic */
+	@media only screen and (max-width: 768px) {
+		
+		#footer-info{
+			padding-bottom: 10%;
+		}
+		#github-container{
+			padding-top: 10%;
+		}
+	}
 
 	.card{
 		border: 2px solid #f3f3f3;
-		border-radius: 5%;
-		padding:2% 0 ;
-		background-color: #eee;
+		padding: 0% 0 ;
+		border-radius: 10px;
+		color: rgba(255, 255, 255, 0.719);
+		background: #e97770 url("images/overlay.png")
 	}
-	
+
+	#quote{
+		color: #fff;
+	}
+
 	.repo-container{
 	width: auto;
 	margin: 0.5% 7%;
 	align-content: center;
 	text-align: center;
-	height: 300px;
+	height: 400px;
 	overflow-y: scroll;
 	}
+
 	#desc{
 		font-family: 'Raleway', sans-serif;
 		font-weight: 900;
 	
 	}
+	
 	@-ms-viewport {
 		width: device-width;
 	}

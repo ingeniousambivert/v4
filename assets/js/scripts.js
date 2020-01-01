@@ -13,12 +13,12 @@ getRepos = () => {
           return len % 3 === 0 ? " fas fa-file-code" : "fas fa-code";
         };
         output += `
-			<div class="col-6 col-12-medium" style="padding:1%; margin: 0 auto;">
+			<div class="col-6 col-12-medium" style="padding:0.5%;">
 					<div class="card">
 				  	<div class="card-body">
-             <h5 class="card-title">
+             <h5 class="card-title" style="margin-top:2%;">
              <strong>
-                <a target='_blank';
+                <a target='_blank'; style="color:#fff;"
                 href="${repo.html_url}">${repo.name}</a>
               </strong> 
             </h5>
